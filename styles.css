@@ -1,0 +1,352 @@
+html{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #8ecae6;
+}
+
+.car-ceiling-container{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+
+
+
+.car-ceiling{
+    background-color: #c3c3c3;
+    width: 500px;
+    height: 100px;
+    clip-path: polygon(40% 0%, 75% 0%, 100% 100%, 0% 100%);
+    border-top-right-radius: 63%;
+    border-top-left-radius: 63%;
+    margin-right:-100px;
+    margin-bottom: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.car-body{
+    background-color: #c3c3c3;
+    width: 1000px;
+    height: 170px;
+    border-top-left-radius: 44%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 2%;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+.window-1{
+    background-color: white;
+    width: 235px;
+    height: 65px;
+    clip-path: polygon(50% 0%, 105% 0%, 100% 100%, 0% 100%);
+    z-index: 999;
+}
+
+
+
+.window-1-frame{
+    width: 291px;
+    height: 80px;
+    background-color: #585858;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    left: 55px;
+}
+.window-2-frame{
+    width: 75px;
+    height: 80px;
+    background-color: #585858;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    border-top-right-radius: 75%;
+    right: 82px;
+    z-index: 1;
+}
+
+.window-2{
+    background-color: white;
+    width: 75px;
+    height: 65px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left:9px;
+    border-top-right-radius: 75%;
+    position: relative;
+    z-index: 999;
+}
+
+#wheels-container{
+    width: 1000px;
+}
+
+.wheel-1, .wheel-2{
+    background-color: #585858;
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -100px;
+    position: relative;
+
+}
+
+.wheel-1{
+    position: relative;
+    left:100px;
+    z-index: 999;
+}
+
+.wheel-2{
+    position: relative;
+    left: 500px;
+}
+
+
+.wheel-subContainer{
+    width: 100%;
+    display: flex;
+}
+
+.rim{
+    background-color: white; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.lights-front{
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    margin-top:0px;
+    margin-left: -10px;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 5%;
+    transform: rotate(-15deg);
+    border-bottom-left-radius:25%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    clip-path: polygon(17% 0%, 105% 0%, 100% 85%, 10% 100%);
+}
+
+
+.lights-front-2{
+    background-color: white;
+    width: 62px;
+    height: 30px;
+    margin-top: -23px;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius:30%;
+    border-right: 2px solid black;
+}
+
+.bumper{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    height: 78px;
+    width: 150px;
+    margin-bottom:-70px;
+    margin-left:-20px;
+    background-color: #c3c3c3;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius:30%;
+    position: relative;
+}
+
+.spoiler-1{
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 30%;
+    height: 20px;
+    width: 200px;
+    background-color: #c3c3c3;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    left: -25px;
+    position: absolute;
+    bottom:-8px;
+    z-index:9;
+}
+
+.spoiler-2{
+    background-color: #c3c3c3;
+    border-style: solid;
+    border-width: 2px;
+    height: 70px;
+    width: 100px;
+    border-color: black;
+    clip-path: polygon(80% 0%, 105% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    right: 0;
+    bottom:-8px;
+    z-index: 1;
+}
+
+.spoiler-3{
+    background-color: #0a6cbe;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    bottom: 0px;
+    right:  40px;
+}
+
+.spoiler-4{
+    background-color: #0a6cbe;
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right:  40px;
+}
+
+
+.stirrups-container{
+    width:  850px;
+    height: 100%;
+    position: relative;
+}
+
+.stirrups{
+    height: 45px;
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.bumper-back-container{
+    width:140px;
+    height: 100%;
+    position: relative;
+}
+
+.bumper-back{
+    height: 70px;
+    width:150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    position: absolute;
+    bottom:0;
+    left: -10px;
+    background-color: #c3c3c3;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.lights-back{
+    height: 40px;
+    width:20px;
+    border-radius: 50%;
+    background-color: #350411;
+    position: absolute;
+    top:30px;
+    right:5px;
+}
+
+.aileron-1{
+    width: 60px;
+    height: 10px;
+    background-color: #494949;
+    border-radius: 8%;
+    margin-top: -3px;
+}
+
+.aileron-2{
+    width: 44px;
+    height: 44px;
+    background-color: #494949;
+    position: absolute;
+    top: -43px;
+    left: 10px;
+    clip-path: polygon(50% 0%, 105% 0%, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+
+.aileron-3{
+    width: 82px;
+    height: 42px;
+    background-color: #1a609f;
+    position: absolute;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
+    transform: rotate(175deg);
+    top: -70px;
+    z-index: 3;
+}
+
+.aileron-container{
+    position: relative;
+}
+
+
+.door{
+    width:300px;
+    height:75%;
+    border-left: 2px solid black;
+    position: absolute;
+    left:194px;
+    top:-9px;
+    border-top-left-radius: 20%;
+    border-right: 2px solid black;
+
+}
+
+.street{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9{
+    background-color: yellow;
+    width: 120px;
+    height: 30px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    margin-right: 105px;
+    animation: moverCarretera 1s linear infinite;
+}
+
+@keyframes moverCarretera {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(200%);
+    }
+}
+
+
